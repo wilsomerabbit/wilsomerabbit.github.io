@@ -1,0 +1,22 @@
+top:
+  - class_name: card-linktree
+    id_name: card-linktree
+    name: 我的連結
+    icon: fas fa-link
+    order: 1
+    html: |
+      <div class="linktree-links">
+        <a class="linktree-btn" href="https://github.com" target="_blank">
+          <i class="fab fa-github"></i>
+          <span>GitHub(未開放)</span>
+        </a>
+        <a class="linktree-btn" href="https://discord.com/users/719106234774585417" target="_blank">
+          <i class="fab fa-discord"></i>
+          <span>Discord</span>
+        </a>
+        <a class="linktree-btn" href="https://www.chess.com/member/wilsome" target="_blank">
+          <i class="fas fa-chess"></i>
+          <span>Chess.com</span>
+        </a>
+    
+      </div>

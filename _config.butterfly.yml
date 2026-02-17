@@ -1,0 +1,268 @@
+# --------------------------------------
+# 導航欄設定
+# --------------------------------------
+nav:
+  logo: # 可以放網站 Logo 圖片網址
+  display_title: true
+  fixed: true # 固定導航欄
+
+# 選單設定（一頁式不需要選單）
+menu:
+
+# --------------------------------------
+# 代碼區塊設定
+# --------------------------------------
+code_blocks:
+  theme: light
+  macStyle: false
+  height_limit: false
+  word_wrap: false
+  copy: true
+  language: true
+  shrink: false
+  fullpage: false
+
+# --------------------------------------
+# 社交媒體連結（參考 haer0248.me 的風格）
+# --------------------------------------
+social:
+
+# --------------------------------------
+# 圖片設定
+# --------------------------------------
+favicon: /img/favicon.png
+
+avatar:
+  img: img/avator-3.jpg # 換成你的頭像網址
+  effect: false
+
+# 關閉頂部圖片
+disable_top_img: true
+default_top_img: 
+index_img: false
+archive_img: false
+tag_img: false
+category_img: false
+
+# 背景設定
+# background:
+
+# 封面設定
+cover:
+  index_enable: true
+  aside_enable: true
+  archives_enable: true
+  default_cover:
+
+# 文章資訊顯示設定
+post_meta:
+  page:
+    date_type: created
+    date_format: date
+    categories: true
+    tags: false
+    label: true
+  post:
+    position: left
+    date_type: both
+    date_format: date
+    categories: true
+    tags: true
+    label: true
+
+# --------------------------------------
+# 首頁設定
+# --------------------------------------
+# 首頁副標題
+subtitle:
+  enable: false
+  effect: true
+  typed_option:
+  source: false
+  sub:
+
+# 文章布局（參考網站使用標準列表布局）
+index_layout: 3
+
+# 首頁文章簡介
+index_post_content:
+  method: 3
+  length: 300
+
+# --------------------------------------
+# 文章頁面設定
+# --------------------------------------
+toc:
+  post: true
+  page: false
+  number: true
+  expand: false
+  style_simple: false
+  scroll_percent: true
+
+post_copyright:
+  enable: true
+  decode: false
+  author_href:
+  license: CC BY-NC-SA 4.0
+  license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+# 贊助/打賞
+reward:
+  enable: false
+
+# 相關文章
+related_post:
+  enable: true
+  limit: 6
+  date_type: created
+
+# 文章分頁
+post_pagination: 1
+
+# 文章過期提醒
+noticeOutdate:
+  enable: false
+
+# --------------------------------------
+# 頁尾設定（參考網站風格）
+# --------------------------------------
+footer:
+  owner:
+    enable: true
+    since: 2025
+  copyright:
+    enable: true
+    version: true
+  custom_text: |
+    <div style="margin-top: 10px; text-align: center;">
+      <p>Test</p>
+      <p style="font-size: 0.9em; color: #8b949e;">若有任何問題或建議，歡迎透過上方社交連結與我聯繫！</p>
+    </div>
+
+# --------------------------------------
+# 側邊欄設定（參考 haer0248.me 風格）
+# --------------------------------------
+aside:
+  enable: true
+  hide: false
+  button: true
+  mobile: true
+  position: left
+  display:
+    archive: true
+    tag: true
+    category: true
+  card_author:
+    enable: true
+    description: ヾ⁠(⁠⁠’⁠Ｏ⁠’⁠⁠)⁠/
+    button:
+      enable: false
+  card_announcement:
+    enable: false
+    content: 正在開發 MyGO 梗圖搜尋器與網頁遊戲中...
+  card_recent_post:
+    enable: false
+    limit: 5
+    sort: date
+  card_categories:
+    enable: false
+    limit: 8
+    expand: none
+  card_tags:
+    enable: false
+    limit: 40
+    color: false
+    orderby: random
+    order: 1
+  card_archives:
+    enable: false
+    type: monthly
+    format: MMMM YYYY
+    order: -1
+    limit: 8
+  card_webinfo:
+    enable: false
+    post_count: true
+    last_push_date: true
+    runtime_date:
+
+# --------------------------------------
+# 右下角按鈕設定
+# --------------------------------------
+# 簡繁轉換
+
+
+# 閱讀模式
+readmode: true
+
+# 深色模式
+darkmode:
+  enable: false
+  button: false
+  autoChangeMode: false
+
+# 顯示滾動百分比
+rightside_scroll_percent: true
+
+# 按鈕排列順序
+rightside_item_order:
+  enable: false
+
+# --------------------------------------
+# 字體設定
+# --------------------------------------
+font:
+  global_font_size:
+  code_font_size:
+  font_family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Lato, Roboto, "PingFang SC", "Microsoft JhengHei", "Microsoft YaHei", sans-serif
+  code_font_family: consolas, Menlo, "PingFang SC", "Microsoft JhengHei", "Microsoft YaHei", sans-serif
+
+# 美化/效果
+beautify:
+  enable: false
+
+# 全域字體大小
+global_font_size:
+
+# 網站背景特效
+canvas_ribbon:
+  enable: false # 保持乾淨簡潔
+
+# 滑鼠點擊效果
+fireworks:
+  enable: false
+
+# 頁面載入動畫
+preloader:
+  enable: false
+
+# 頁面美化
+inject:
+  head:
+    - <link rel="stylesheet" href="/css/custom.css">
+  bottom:
+
+# CDN 設定
+CDN:
+  option:
+
+# PWA 設定
+pwa:
+  enable: false
+
+# Open Graph
+Open_Graph_meta:
+  enable: true
+
+# 標籤外掛
+tag_plugins:
+  enable: true
+
+# --------------------------------------
+# 分享設定
+# --------------------------------------
+share:
+  use: 
+  sharejs:
+    sites: 
