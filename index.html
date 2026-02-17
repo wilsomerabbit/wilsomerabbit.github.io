@@ -1,0 +1,254 @@
+<!DOCTYPE html><html lang="zh-TW" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Aurora 的個人檔案 | Aurora 的個人檔案</title><meta name="author" content="Aurora"><meta name="copyright" content="Aurora"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Aurora           @Rebecca_0411                                🐢嗨！我是 Aurora，歡迎來到我的小空間。🐢         有的時候會寫程式、玩西洋棋。         偶爾也會開發一些有趣的專案。         頭貼跟名字常換，可能會找不到我:D">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Aurora 的個人檔案">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="Aurora 的個人檔案">
+<meta property="og:description" content="Aurora           @Rebecca_0411                                🐢嗨！我是 Aurora，歡迎來到我的小空間。🐢         有的時候會寫程式、玩西洋棋。         偶爾也會開發一些有趣的專案。         頭貼跟名字常換，可能會找不到我:D">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="http://example.com/img/avator-3.jpg">
+<meta property="article:published_time" content="2026-02-11T16:00:00.000Z">
+<meta property="article:modified_time" content="2026-02-17T09:15:21.786Z">
+<meta property="article:author" content="Aurora">
+<meta property="article:tag" content="MyGO, Discord Bot, Python">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/avator-3.jpg"><script type="application/ld+json"></script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=5.5.4"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '複製成功',
+    error: '複製失敗',
+    noSupport: '瀏覽器不支援'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '剛剛',
+    min: '分鐘前',
+    hour: '小時前',
+    day: '天前',
+    month: '個月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.13.0/dist/infinitegrid.min.js',
+    buttonText: '載入更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Aurora 的個人檔案',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'page'
+}</script><link rel="stylesheet" href="/css/custom.css"><meta name="generator" content="Hexo 8.1.1"></head><body><div class="page type-index" id="body-wrap"><header class="not-top-img fixed" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Aurora 的個人檔案</span></a></span><div id="menus"></div></nav><h1 class="title-seo">Aurora 的個人檔案</h1></header><main class="layout" id="content-inner"><div id="page"><div class="container" id="article-container"><!-- 自我介紹區 -->
+<div class="section-block about-section">
+  <div class="about-content">
+    <div class="about-left">
+      <div class="about-intro">
+        <div class="about-text">
+          <h2>Aurora</h2>
+          <p class="about-tagline">@Rebecca_0411</p>
+        </div>
+      </div>
+      <p class="about-desc">
+        🐢嗨！我是 Aurora，歡迎來到我的小空間。🐢<br>
+        有的時候會寫程式、玩西洋棋。<br>
+        偶爾也會開發一些有趣的專案。<br>
+        頭貼跟名字常換，可能會找不到我:D
+      </p>
+    </div>
+    <div class="about-right">
+      <img src="/img/about-side.jpg" class="about-side-img" alt="" />
+    </div>
+  </div>
+</div>
+
+<hr class="section-divider" />
+
+<!-- Project 大分類 -->
+<div class="section-block project-section">
+  <h2 class="section-title"><i class="fas fa-code" style="color:#3b82f6"></i> Project</h2>
+  <p class="section-subtitle"></p>
+
+  <!-- Discord 機器人區 -->
+  <div class="project-item bot-section">
+    <h3 class="project-item-title"><i class="fab fa-discord" style="color:#5865F2"></i> Discord Bot</h3>
+    <p class="section-subtitle">這裡放一些我寫的dc機器人</p>
+  <div class="bot-layout">
+    <div class="discord-invite-card">
+      <div class="discord-invite-header">Invite to join</div>
+      <div class="discord-invite-body">
+        <img src="img/discord-avatar.jpg" class="discord-invite-avatar" alt="千早愛音" />
+        <div class="discord-invite-info">
+          <div class="discord-invite-name">千早愛音</div>
+          <div class="discord-invite-status">
+            <span class="status-dot online"></span> Online
+          </div>
+        </div>
+      </div>
+      <a href="https://discord.com/oauth2/authorize?client_id=1468680591145828362" class="discord-invite-join" target="_blank">Join</a>
+    </div>
+    <div class="bot-description">
+      <div class="bot-feature-card">
+        <div class="bot-feature-title">MyGo圖搜尋機器人</div>
+        <div class="bot-feature-item">
+          <span>支援 /random 隨機抽選圖片功能</span>
+        </div>
+      </div>
+      <a href="#" class="bot-doc-link" target="_blank"><i class="fas fa-book"></i> 點我進入 千早愛音Bot使用說明</a>
+    </div>
+  </div>
+  </div>
+</div>
+
+<hr class="section-divider" />
+
+<!-- 西洋棋區 -->
+<div class="section-block chess-section">
+  <h2 class="section-title"><i class="fas fa-chess" style="color:#769656"></i> Chess</h2>
+  <p class="section-subtitle">My chess profile</p>
+  <a href="https://www.chess.com/member/wilsome" class="chess-banner-link" target="_blank">
+    <img src="/img/chess-profile.png" class="chess-banner-img" alt="Chess.com Profile" />
+  </a>
+  <div class="chess-info">
+    <div class="chess-rating-card">
+      <div class="chess-rating-label"><i class="fas fa-clock"></i> Rapid Rating</div>
+      <div class="chess-rating-value" id="chess-rapid-rating">載入中...</div>
+    </div>
+    <p class="chess-desc">點圖片可以跳轉到我的chess.com介面，有在玩的歡迎加好友！</p>
+  </div>
+</div>
+
+<script>
+fetch('https://api.chess.com/pub/player/wilsome/stats')
+  .then(r => r.json())
+  .then(data => {
+    const el = document.getElementById('chess-rapid-rating');
+    if (data.chess_rapid && data.chess_rapid.last) {
+      el.textContent = data.chess_rapid.last.rating;
+    } else {
+      el.textContent = 'N/A';
+    }
+  })
+  .catch(() => {
+    document.getElementById('chess-rapid-rating').textContent = 'N/A';
+  });
+</script>
+
+<hr class="section-divider" />
+
+<!-- 請我喝杯拿鐵（贊助區） -->
+<div class="section-block sponsor-section">
+  <a href="#" class="sponsor-title-link" target="_blank">
+    <h2 class="section-title"><i class="fas fa-mug-hot" style="color:#ef4444"></i> 請我喝杯拿鐵↗</h2>
+  </a>
+  <p class="sponsor-desc">如果你喜歡我的內容或專案，可以請我喝杯拿鐵來支持我繼續創作！</p>
+  <a href="#" class="sponsor-banner-link" target="_blank">
+    <img src="/img/sponsor-banner.jpg" class="sponsor-banner-img" alt="贊助" />
+  </a>
+  <p class="sponsor-hint">點圖片可以進入贊助連結</p>
+</div>
+</div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/avator-3.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Aurora</div><div class="author-info-description">ヾ⁠(⁠⁠’⁠Ｏ⁠’⁠⁠)⁠/</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">0</div></a><a href="/tags/"><div class="headline">標籤</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分類</div><div class="length-num">0</div></a></div></div><div class="card-widget card-linktree" id="card-linktree"><div class="item-headline"><i class="fas fa-link"></i><span>我的連結</span></div><div class="item-content"><div class="linktree-links">
+  <a class="linktree-btn" href="https://github.com" target="_blank">
+    <i class="fab fa-github"></i>
+    <span>GitHub(未開放)</span>
+  </a>
+  <a class="linktree-btn" href="https://discord.com/users/719106234774585417" target="_blank">
+    <i class="fab fa-discord"></i>
+    <span>Discord</span>
+  </a>
+  <a class="linktree-btn" href="https://www.chess.com/member/wilsome" target="_blank">
+    <i class="fas fa-chess"></i>
+    <span>Chess.com</span>
+  </a>
+
+</div>
+</div></div><div class="sticky_layout"></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 - 2026 By Aurora</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 8.1.1</a><span class="footer-separator">|</span><span>主題 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.4</a></span></div><div class="footer_custom_text"><div style="margin-top: 10px; text-align: center;">
+  <p>Test</p>
+  <p style="font-size: 0.9em; color: #8b949e;">若有任何問題或建議，歡迎透過上方社交連結與我聯繫！</p>
+</div>
+</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="hide-aside-btn" type="button" title="單欄和雙欄切換"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="go-up" type="button" title="回到頂端"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.4"></script><script src="/js/main.js?v=5.5.4"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

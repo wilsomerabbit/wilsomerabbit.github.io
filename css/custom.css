@@ -1,0 +1,930 @@
+/* ====================================== */
+/* 質感主題 - 深藍背景 + 白色首頁           */
+/* ====================================== */
+
+/* 字體 */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Lato, Roboto, "PingFang TC", "Microsoft JhengHei", sans-serif;
+  
+  font-weight: 550;
+}
+
+/* 整體背景 - 藍色 */
+:root {
+  --global-bg: #ffffff;
+  --font-color: #e2e8f0;
+  --hr-border: #3b5278;
+  --card-bg: #ffffff;
+  --text-bg-hover: #334d6e;
+}
+
+#web_bg {
+  /* background-color: #ffffff; 
+  background-image: radial-gradient(#ffc0cb 2px, transparent 2px); 
+  background-size: 30px 30px;  */
+}
+
+body {
+  /* 固定背景 */
+  background-attachment: fixed;
+  /* 將 #1C1C1C 的範圍擴展到 75%，讓深灰色佔據大部分版面 */
+  background-image: linear-gradient(135deg, #1C1C1C 0%, #1C1C1C 75%, #003B73 100%);
+  background-size: cover;
+  min-height: 100vh;
+  margin: 0;
+}
+
+#page {
+  background: #ffffff !important;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+/* ====================================== */
+/* 導航欄 - 毛玻璃效果                     */
+/* ====================================== */
+#nav {
+  background: rgba(16, 24, 48, 0.9) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+}
+
+#nav .site-name {
+  color: #f1f5f9 !important;
+  font-weight: 700;
+}
+
+#nav .menus_items .menus_item a {
+  color: #94a3b8 !important;
+}
+
+#nav .menus_items .menus_item a:hover {
+  color: #60a5fa !important;
+}
+
+/* ====================================== */
+/* 側邊欄 - 柔和灰色                       */
+/* ====================================== */
+.layout {
+  --aside-width: 413px;
+}
+
+#aside-content {
+  width: 413px !important;
+}
+
+#aside-content .card-widget {
+  background: #111d35 !important;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 14px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+#aside-content .card-widget:hover {
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35);
+}
+
+#aside-content .card-widget.card-info {
+  border-radius: 14px 14px 0 0;
+  margin-bottom: 0 !important;
+  border-bottom: none !important;
+  padding-top: 60px;
+}
+
+#aside-content .card-info .author-info-name {
+  color: #f1f5f9 !important;
+  font-weight: 700;
+}
+
+#aside-content .card-info .author-info-description {
+  color: #94a3b8 !important;
+}
+
+#aside-content .card-info .avatar-img {
+  margin-top: 0 !important;
+  width: 150px !important;
+  height: 150px !important;
+  overflow: visible !important;
+}
+
+#aside-content .card-info .avatar-img img {
+  transition: transform 0.3s ease;
+  width: 150px !important;
+  height: 150px !important;
+  border-radius: 50% !important;
+}
+
+/* 隱藏文章、標籤、分類統計數據 */
+#aside-content .card-info .site-data {
+  display: none !important;
+}
+
+#aside-content .card-info .avatar-img img:hover {
+  transform: scale(1.05);
+}
+
+/* 側邊欄社交圖標 */
+.card-info-social-icons .social-icon {
+  margin: 0 6px;
+  transition: transform 0.2s ease;
+}
+
+.card-info-social-icons .social-icon:hover {
+  transform: translateY(-2px);
+}
+
+/* 側邊欄標籤、分類 */
+.card-tag-cloud a,
+.card-categories-list a {
+  color: #7c8db5 !important;
+  transition: all 0.3s ease;
+}
+
+.card-tag-cloud a:hover,
+.card-categories-list a:hover {
+  color: #60a5fa !important;
+}
+
+/* 側邊欄數據 */
+.card-widget .card-info-data-item .headline {
+  color: #64748b !important;
+}
+
+.card-widget .site-data a {
+  color: #cbd5e1 !important;
+}
+
+.card-widget .site-data a:hover {
+  color: #60a5fa !important;
+}
+
+/* 側邊欄標題 */
+#aside-content .item-headline {
+  color: #cbd5e1 !important;
+}
+
+#aside-content .item-headline i {
+  color: #60a5fa !important;
+}
+
+/* ====================================== */
+/* 首頁主要內容區域                         */
+/* ====================================== */
+#article-container {
+  background: transparent !important;
+  border: none;
+  border-radius: 0;
+  padding: 30px 24px;
+  box-shadow: none;
+  color: #374151 !important;
+}
+
+/* 隱藏頁面標題 */
+.type-index .page-title,
+.type-index .title-seo {
+  display: none !important;
+}
+
+/* 隱藏頂部 header 空白區域 */
+.type-index #page-header {
+  display: none !important;
+}
+
+/* 首頁內容區域 */
+.type-index #article-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* 個人資料頭像 */
+.profile-header img {
+  border: 4px solid #ffffff;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-header img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.profile-header h1 {
+  font-size: 2.5em;
+  font-weight: 800;
+  color: #1a1a2e !important;
+  margin: 20px 0 10px;
+  letter-spacing: -0.5px;
+}
+
+/* 分隔線 */
+.type-index hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #d1d5db, transparent);
+  margin: 45px 0;
+}
+
+/* 標題 */
+.type-index h2 {
+  font-size: 1.6em;
+  font-weight: 700;
+  color: #1e293b !important;
+  margin: 35px 0 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* 連結 */
+.type-index #article-container a {
+  color: #60a5fa !important;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.type-index #article-container a:hover {
+  color: #93bbfd !important;
+  border-bottom-color: #93bbfd;
+}
+
+/* 列表 */
+.type-index ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.type-index li {
+  padding: 10px 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  color: #cbd5e1;
+}
+
+.type-index li:hover {
+  background: rgba(255, 255, 255, 0.05);
+  padding-left: 18px;
+}
+
+/* 強調文字 */
+.type-index strong {
+  color: #f1f5f9;
+}
+
+.type-index p {
+  color: #cbd5e1;
+  line-height: 1.8;
+}
+
+/* ====================================== */
+/* 頁首                                    */
+/* ====================================== */
+#page-header {
+  background: transparent !important;
+}
+
+#page-header.post-bg {
+  background: transparent !important;
+}
+
+.post-title {
+  color: #1e293b !important;
+}
+
+/* ====================================== */
+/* 頁尾                                    */
+/* ====================================== */
+#footer {
+  padding: 40px 0 20px;
+  background: #111d35 !important;
+  color: #64748b !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+#footer a {
+  color: #60a5fa !important;
+}
+
+#footer a:hover {
+  color: #93bbfd !important;
+}
+
+#footer .footer-copyright {
+  color: #64748b !important;
+}
+
+/* ====================================== */
+/* 文章內容                                */
+/* ====================================== */
+#post-content {
+  line-height: 1.8;
+  font-size: 16px;
+  color: #374151 !important;
+}
+
+#post-content h2 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #3b82f6;
+  color: #1e293b !important;
+}
+
+#post-content h3 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #1e293b !important;
+}
+
+#post-content a {
+  color: #3b82f6 !important;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+#post-content a:hover {
+  color: #2563eb !important;
+  border-bottom-color: #2563eb;
+}
+
+/* 引用 */
+blockquote {
+  border-left: 4px solid #3b82f6;
+  padding: 12px 20px;
+  margin: 20px 0;
+  color: #6b7280 !important;
+  background: #f8fafc !important;
+  border-radius: 0 8px 8px 0;
+}
+
+/* 程式碼區塊 */
+figure.highlight {
+  background: #f8fafc !important;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+}
+
+/* ====================================== */
+/* 文章 meta                               */
+/* ====================================== */
+.post-meta-date,
+.post-meta-categories,
+.post-meta-separator,
+.post-meta-label {
+  color: #9ca3af !important;
+}
+
+/* ====================================== */
+/* 捲軸                                    */
+/* ====================================== */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c0c0c0;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3b5278;
+}
+
+/* ====================================== */
+/* 右側按鈕                                */
+/* ====================================== */
+#rightside > div button {
+  background: #111d35 !important;
+  color: #cbd5e1 !important;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+#rightside > div button:hover {
+  background: #1e3054 !important;
+}
+
+/* ====================================== */
+/* 響應式設計                               */
+/* ====================================== */
+@media screen and (max-width: 768px) {
+  #article-container {
+    padding: 30px 20px !important;
+    border-radius: 12px;
+  }
+
+  .profile-header h1 {
+    font-size: 2em;
+  }
+
+  .profile-header img {
+    width: 120px !important;
+    height: 120px !important;
+  }
+
+  .page[data-type="index"] h2 {
+    font-size: 1.4em;
+  }
+}
+
+/* ====================================== */
+/* 側邊欄 Linktree 連結按鈕                */
+/* ====================================== */
+#card-linktree {
+  background: #111d35 !important;
+  border-radius: 0 0 14px 14px !important;
+  margin-top: 0 !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.06) !important;
+}
+
+.linktree-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.linktree-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  color: #e2e8f0 !important;
+  font-size: 0.95em;
+  font-weight: 600;
+  text-decoration: none !important;
+  transition: all 0.25s ease;
+}
+
+.linktree-btn:hover {
+  background: rgba(255, 255, 255, 0.14);
+  border-color: rgba(255, 255, 255, 0.25);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  color: #fff !important;
+}
+
+.linktree-btn i {
+  font-size: 1.2em;
+  width: 24px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.linktree-btn .fa-github { color: #e6edf3; }
+.linktree-btn .fa-discord { color: #5865F2; }
+.linktree-btn .fa-x-twitter { color: #e6edf3; }
+.linktree-btn .fa-instagram { color: #E4405F; }
+.linktree-btn .fa-twitch { color: #9146FF; }
+.linktree-btn .fa-envelope { color: #60a5fa; }
+
+/* ====================================== */
+/* 首頁平面區塊                            */
+/* ====================================== */
+.section-block {
+  margin-bottom: 0;
+}
+
+.section-divider {
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #e5e7eb, transparent);
+  margin: 36px 0;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 2em;
+  font-weight: 700;
+  color: #1e293b !important;
+  margin: 0 0 4px !important;
+}
+
+.section-subtitle {
+  color: #6b7280 !important;
+  font-size: 1.2em;
+  margin: 0 0 16px !important;
+}
+
+.project-item {
+  margin-top: 8px;
+  padding-left: 24px;
+}
+
+.project-item-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #1e293b !important;
+  margin: 0 0 4px !important;
+}
+
+/* --- 自我介紹 --- */
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.about-left {
+  flex: 1;
+}
+
+.about-right {
+  flex-shrink: 0;
+  width: 200px;
+}
+
+.about-side-img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.about-intro {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 16px;
+}
+
+.about-avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #e5e7eb;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.about-avatar:hover {
+  transform: scale(1.08);
+}
+
+.about-text h2 {
+  margin: 0 0 4px !important;
+  font-size: 2em;
+  font-weight: 800;
+  color: #1e293b !important;
+}
+
+.about-tagline {
+  margin: 0 !important;
+  color: #6b7280 !important;
+  font-size: 1.25em;
+}
+
+.about-desc {
+  color: #4b5563 !important;  
+  line-height: 1.8;
+  margin: 0 !important;
+  font-size: 1.2em;
+}
+
+/* --- Discord Invite Card --- */
+.bot-layout {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.bot-description {
+  flex: 1;
+}
+
+.bot-description p {
+  margin: 0 0 6px !important;
+  color: #374151 !important;
+  font-size: 1.15em;
+  line-height: 1.6;
+}
+
+.bot-description code {
+  background: #f1f5f9;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.9em;
+  color: #5865F2;
+}
+
+.bot-feature-card {
+  background: #f1f3f5;
+  border-radius: 10px;
+  padding: 18px 20px;
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.08), inset 0 1px 3px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e2e5e9;
+}
+
+.bot-feature-title {
+  font-size: 1.15em;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 12px;
+}
+
+.bot-feature-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1em;
+  color: #4b5563;
+}
+
+.bot-feature-tag {
+  background: #5865F2;
+  color: #fff;
+  padding: 2px 10px;
+  border-radius: 6px;
+  font-size: 0.85em;
+  font-weight: 600;
+  font-family: 'Consolas', 'Monaco', monospace;
+  letter-spacing: 0.3px;
+}
+
+.bot-doc-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+  color: #3b82f6 !important;
+  font-weight: 600;
+  font-size: 1.2em;
+  text-decoration: none !important;
+  border-bottom: none !important;
+  transition: all 0.2s ease;
+}
+
+.bot-doc-link:hover {
+  color: #2563eb !important;
+  text-decoration: underline !important;
+}
+
+.discord-invite-card {
+  background: #2b2d31;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 320px;
+  min-width: 320px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.discord-invite-header {
+  padding: 10px 14px 0;
+  font-size: 0.72em;
+  font-weight: 700;
+  color: #b5bac1 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.discord-invite-body {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px 10px;
+  justify-content: flex-start;
+}
+
+.discord-invite-avatar {
+  width: 62px;
+  height: 62px;
+  border-radius: 12px;
+  object-fit: cover;
+  border: none !important;
+  box-shadow: none !important;
+  flex-shrink: 0;
+}
+
+.discord-invite-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  flex: 1;
+}
+
+.discord-invite-name {
+  font-size: 1.1em;
+  font-weight: 700;
+  color: #f2f3f5 !important;
+}
+
+.discord-invite-status {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.82em;
+  color: #b5bac1 !important;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.status-dot.online {
+  background: #23a55a;
+}
+
+.discord-invite-join {
+  display: block;
+  margin: 0 14px 12px;
+  padding: 8px;
+  background: #ffffff !important;
+  color: #000000 !important;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: 900 !important;
+  font-size: 0.95em;
+  text-decoration: none !important;
+  border-bottom: none !important;
+  transition: all 0.2s ease;
+}
+
+.discord-invite-join:hover {
+  background: #e8e8e8 !important;
+  color: #000000 !important;
+}
+
+/* --- 贊助區 --- */
+
+/* --- 西洋棋區 --- */
+.chess-banner-link {
+  display: block;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  border-bottom: none !important;
+  background: transparent !important;
+  transition: transform 0.2s ease;
+}
+
+.chess-banner-link:hover {
+  transform: translateY(-2px);
+}
+
+.chess-banner-img {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+}
+
+.chess-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.chess-rating-card {
+  background: #f1f3f5;
+  border-radius: 10px;
+  padding: 16px 24px;
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.08), inset 0 1px 3px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e2e5e9;
+  text-align: center;
+  min-width: 160px;
+}
+
+.chess-rating-label {
+  font-size: 1em;
+  font-weight: 600;
+  color: #6b7280;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.chess-rating-value {
+  font-size: 2em;
+  font-weight: 800;
+  color: #769656;
+  letter-spacing: -0.5px;
+}
+
+.chess-desc {
+  color: #4b5563 !important;
+  font-size: 1.2em;
+  line-height: 1.7;
+  margin: 0 !important;
+  flex: 1;
+}
+
+/* --- 贊助區 --- */
+.sponsor-title-link {
+  text-decoration: none !important;
+  border-bottom: none !important;
+}
+
+.sponsor-title-link:hover .section-title {
+  opacity: 0.8;
+}
+
+.sponsor-desc {
+  color: #4b5563 !important;
+  font-size: 1.2em;
+  line-height: 1.7;
+  margin: 0 0 20px !important;
+}
+
+.sponsor-banner-link {
+  display: block;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  border-bottom: none !important;
+  background: transparent !important;
+  transition: transform 0.2s ease;
+}
+
+.sponsor-banner-link:hover {
+  transform: translateY(-2px);
+}
+
+.sponsor-banner-img {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+}
+
+.sponsor-hint {
+  color: #4b5563 !important;
+  font-size: 1.2em;
+  margin: 8px 0 16px !important;
+}
+
+.sponsor-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 28px;
+  background: linear-gradient(135deg, #ef4444, #f97316) !important;
+  color: #fff !important;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 1em;
+  text-decoration: none !important;
+  border-bottom: none !important;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 14px rgba(239, 68, 68, 0.3);
+}
+
+.sponsor-btn:hover {
+  color: #fff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(239, 68, 68, 0.45);
+}
+
+/* --- 首頁區塊響應式 --- */
+@media screen and (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+  }
+
+  .about-right {
+    width: 100%;
+  }
+
+  .about-intro {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-avatar {
+    width: 80px;
+    height: 80px;
+  }
+
+  .about-text h2 {
+    font-size: 1.3em;
+  }
+
+  .bot-layout {
+    flex-direction: column;
+  }
+}
+
