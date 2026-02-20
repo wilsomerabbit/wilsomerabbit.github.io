@@ -1,0 +1,211 @@
+<!DOCTYPE html><html lang="zh-TW" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>千早愛音bot 使用說明 | Aurora 的個人檔案</title><meta name="author" content="Aurora"><meta name="copyright" content="Aurora"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="🤖 機器人定位千早愛音bot 是一個專為聊天打造的 MyGO!!!!! 梗圖傳送機器人。 不同於一般的圖片查詢工具，本機器人的設計初衷是為了讓你在 Discord 聊天「圖戰」或「接梗」時，能以最快速度甩出最準確的 MyGO 梗圖。無論是要表達心情還是接梗，愛音都能幫你搞定！   🛠️ 指令介紹1. &#x2F;random — 隨機召喚MyGo圖不知道要發什麼？讓愛音幫你決定。  用法：輸入&#x2F;ra">
+<meta property="og:type" content="website">
+<meta property="og:title" content="千早愛音bot 使用說明">
+<meta property="og:url" content="http://example.com/anon-bot/index.html">
+<meta property="og:site_name" content="Aurora 的個人檔案">
+<meta property="og:description" content="🤖 機器人定位千早愛音bot 是一個專為聊天打造的 MyGO!!!!! 梗圖傳送機器人。 不同於一般的圖片查詢工具，本機器人的設計初衷是為了讓你在 Discord 聊天「圖戰」或「接梗」時，能以最快速度甩出最準確的 MyGO 梗圖。無論是要表達心情還是接梗，愛音都能幫你搞定！   🛠️ 指令介紹1. &#x2F;random — 隨機召喚MyGo圖不知道要發什麼？讓愛音幫你決定。  用法：輸入&#x2F;ra">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="http://example.com/img/avator-3.jpg">
+<meta property="article:published_time" content="2026-02-19T16:00:00.000Z">
+<meta property="article:modified_time" content="2026-02-20T08:06:11.858Z">
+<meta property="article:author" content="Aurora">
+<meta property="article:tag" content="MyGO, Discord Bot, Python">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/avator-3.jpg"><script type="application/ld+json"></script><link rel="shortcut icon" href="/img/avator-3.jpg"><link rel="canonical" href="http://example.com/anon-bot/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=5.5.4"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '複製成功',
+    error: '複製失敗',
+    noSupport: '瀏覽器不支援'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '剛剛',
+    min: '分鐘前',
+    hour: '小時前',
+    day: '天前',
+    month: '個月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.13.0/dist/infinitegrid.min.js',
+    buttonText: '載入更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '千早愛音bot 使用說明',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'page'
+}</script><link rel="stylesheet" href="/css/custom.css"><meta name="generator" content="Hexo 8.1.1"></head><body><div class="page" id="body-wrap"><header class="not-top-img fixed" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Aurora 的個人檔案</span></a></span><div id="menus"></div></nav><h1 class="title-seo">千早愛音bot 使用說明</h1></header><main class="layout" id="content-inner"><div id="page"><div class="page-title">千早愛音bot 使用說明</div><div class="container" id="article-container"><div class="large-font-page">
+
+<h2 id="🤖-機器人定位"><a href="#🤖-機器人定位" class="headerlink" title="🤖 機器人定位"></a>🤖 機器人定位</h2><p><strong>千早愛音bot</strong> 是一個專為聊天打造的 <strong>MyGO!!!!! 梗圖傳送機器人</strong>。</p>
+<p>不同於一般的圖片查詢工具，本機器人的設計初衷是為了讓你在 Discord 聊天「圖戰」或「接梗」時，能以最快速度甩出最準確的 MyGO 梗圖。無論是要表達心情還是接梗，愛音都能幫你搞定！</p>
+<p><img src="/img/anon-bot-image.png" alt="anon-bot-image"></p>
+<hr>
+<h2 id="🛠️-指令介紹"><a href="#🛠️-指令介紹" class="headerlink" title="🛠️ 指令介紹"></a>🛠️ 指令介紹</h2><h3 id="1-random-—-隨機召喚MyGo圖"><a href="#1-random-—-隨機召喚MyGo圖" class="headerlink" title="1. /random — 隨機召喚MyGo圖"></a>1. <code>/random</code> — 隨機召喚MyGo圖</h3><p>不知道要發什麼？讓愛音幫你決定。</p>
+<ul>
+<li><strong>用法</strong>：輸入<code>/random [角色(選填)]</code></li>
+<li><strong>特色</strong>：從 MyGO 梗圖庫中隨機挑選一張，適合用來測試運氣。<blockquote>
+<p>角色為選填，如果有選擇角色，會從該角色的資料庫隨機挑選。</p>
+</blockquote>
+</li>
+</ul>
+<p><img src="/img/random-sample1.png" alt="&#x2F;random 出圖截圖"></p>
+<hr>
+<h3 id="2-mygo-—-快速精準搜尋"><a href="#2-mygo-—-快速精準搜尋" class="headerlink" title="2. /mygo — 快速精準搜尋"></a>2. <code>/mygo</code> — 快速精準搜尋</h3><p>如果你已經對台詞瞭若指掌，這是最快的出圖方式。</p>
+<ul>
+<li><p><strong>用法</strong>：輸入<code>/mygo [台詞]</code></p>
+</li>
+<li><p><strong>特色</strong>：直接從資料庫搜尋對應圖片。台詞後方的角色代表說台詞的人，或在圖片裡的主角，幫助在台詞重複時精確分辨。</p>
+</li>
+</ul>
+<p><img src="/img/mygo-sample1.png" alt="&#x2F;mygo 指令截圖"></p>
+<hr>
+<h3 id="3-search-—-互動式選單搜尋"><a href="#3-search-—-互動式選單搜尋" class="headerlink" title="3. /search — 互動式選單搜尋"></a>3. <code>/search</code> — 互動式選單搜尋</h3><p>忘記具體台詞怎麼打？用選單點選最方便。</p>
+<ul>
+<li><strong>用法</strong>：輸入 <code>/search [角色]</code> 。</li>
+<li><strong>特色</strong>：送出指令後，Discord 會跳出該角色的專屬的<strong>下拉選單</strong>，列出所有收錄的台詞。</li>
+</ul>
+<p><img src="/img/search-sample1.png" alt="&#x2F;search 選單截圖"></p>
+<hr>
+<h3 id="🚀-機器人邀請連結"><a href="#🚀-機器人邀請連結" class="headerlink" title="🚀 機器人邀請連結"></a>🚀 機器人邀請連結</h3><div class="bot-layout" style="margin-top: 20px;">
+  <div class="discord-invite-card">
+    <div class="discord-invite-header">Invite to join</div>
+    <div class="discord-invite-body">
+      <img src="/img/discord-avatar.jpg" class="discord-invite-avatar" alt="千早愛音" />
+      <div class="discord-invite-info">
+        <div class="discord-invite-name">千早愛音</div>
+        <div class="discord-invite-status">
+          <span class="status-dot online"></span> Online
+        </div>
+      </div>
+    </div>
+    <a href="https://discord.com/oauth2/authorize?client_id=1468680591145828362" class="discord-invite-join" target="_blank">Join</a>
+  </div>
+  
+  <div class="bot-description">
+    <p>點擊左側卡片的 <strong>Join</strong> 按鈕，即可將愛音邀請至你的伺服器！</p>
+    <p>邀請後可以使用 <code>/</code> 查看詳細指令列表。</p>
+  </div>
+</div>
+
+<hr>
+<blockquote>
+<p>💡 如果發現想用的梗圖沒被收錄，歡迎私訊千早愛音機器人或連繫我！</p>
+</blockquote>
+</div>
+
+<hr class="section-divider" />
+
+<div style="text-align: center; margin-top: 40px;">
+  <a href="/" class="bot-doc-link" style="font-size: 1.2em; border-bottom: 2px solid #3b82f6;">
+    <i class="fas fa-home"></i> 回到 Aurora 的小空間
+  </a>
+</div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/avator-3.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Aurora</div><div class="author-info-description">ヾ⁠(⁠⁠’⁠Ｏ⁠’⁠⁠)⁠/</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">0</div></a><a href="/tags/"><div class="headline">標籤</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分類</div><div class="length-num">0</div></a></div></div><div class="card-widget card-linktree" id="card-linktree"><div class="item-headline"><i class="fas fa-link"></i><span>我的連結</span></div><div class="item-content"><div class="linktree-links">
+  <a class="linktree-btn" href="https://github.com" target="_blank">
+    <i class="fab fa-github"></i>
+    <span>GitHub(未開放)</span>
+  </a>
+  <a class="linktree-btn" href="https://discord.com/users/719106234774585417" target="_blank">
+    <i class="fab fa-discord"></i>
+    <span>Discord</span>
+  </a>
+  <a class="linktree-btn" href="https://www.chess.com/member/wilsome" target="_blank">
+    <i class="fas fa-chess"></i>
+    <span>Chess.com</span>
+  </a>
+
+</div>
+</div></div><div class="sticky_layout"></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 - 2026 By Aurora</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 8.1.1</a><span class="footer-separator">|</span><span>主題 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.4</a></span></div><div class="footer_custom_text"><div style="margin-top: 10px; text-align: center;">
+  <p>Test</p>
+  <p style="font-size: 0.9em; color: #8b949e;">若有任何問題或建議，歡迎透過上方社交連結與我聯繫！</p>
+</div>
+</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="hide-aside-btn" type="button" title="單欄和雙欄切換"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="go-up" type="button" title="回到頂端"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.4"></script><script src="/js/main.js?v=5.5.4"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
