@@ -60,7 +60,7 @@ comments: false
           <span>支援 /random 隨機抽選圖片功能</span>
         </div>
       </div>
-      <a href="#" class="bot-doc-link" target="_blank"><i class="fas fa-book"></i> 點我進入 千早愛音Bot使用說明</a>
+      <a href="/anon-bot/" class="bot-doc-link" target="_blank"><i class="fas fa-book"></i> 點我進入 千早愛音Bot使用說明</a>
     </div>
   </div>
   </div>

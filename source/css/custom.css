@@ -12,7 +12,7 @@ body {
 /* 整體背景 - 藍色 */
 :root {
   --global-bg: #ffffff;
-  --font-color: #e2e8f0;
+  --font-color: #000000;
   --hr-border: #3b5278;
   --card-bg: #ffffff;
   --text-bg-hover: #334d6e;
@@ -325,7 +325,7 @@ body {
 /* ====================================== */
 #post-content {
   line-height: 1.8;
-  font-size: 16px;
+  font-size: 18px!important;
   color: #374151 !important;
 }
 
@@ -928,3 +928,41 @@ figure.highlight {
   }
 }
 
+/* 定義一個通用的「大字體頁面」類別 - 1.1875rem (等同於 19px) */
+.large-font-page {
+  font-size: 1.1875rem !important;
+}
+
+/* 確保裡面的所有段落、列表、自定義 div 都繼承這個大小 */
+.large-font-page p, 
+.large-font-page div, 
+.large-font-page li, 
+.large-font-page .about-desc, 
+.large-font-page .bot-description p {
+  font-size: 1.1875rem !important;
+  line-height: 1.8 !important;
+}
+
+/* 標題保持相對比例放大 */
+.large-font-page h2 {
+  font-size: 1.8em !important;
+}
+
+.large-font-page h3 {
+  font-size: 1.5em !important;
+}
+/* 讓 large-font-page 裡面的所有 code 標籤自動繼承父層的大小 */
+.large-font-page code {
+  /* 使用 inherit 讓它直接抓所在地（可能是 h3，也可能是 p）的大小 */
+  font-size: inherit !important; 
+  
+  /* 稍微調整一下垂直對齊，讓英文字母跟中文字看起來在同一條線上 */
+  vertical-align: middle;
+  
+  /* 保持原本的質感 */
+  background-color: rgba(175, 184, 193, 0.2);
+  padding: 0.1em 0.3em;
+  border-radius: 4px;
+  font-family: inherit; /* 也可以考慮繼承字體，讓整體感更統一 */
+  font-weight: bold;
+}

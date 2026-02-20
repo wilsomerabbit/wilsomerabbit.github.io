@@ -30,7 +30,7 @@ social:
 # --------------------------------------
 # 圖片設定
 # --------------------------------------
-favicon: /img/favicon.png
+favicon: /img/avator-3.jpg 
 
 avatar:
   img: img/avator-3.jpg # 換成你的頭像網址
