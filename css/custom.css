@@ -928,41 +928,38 @@ figure.highlight {
   }
 }
 
-/* 定義一個通用的「大字體頁面」類別 - 1.1875rem (等同於 19px) */
+/* 使用更高權重，確保完全覆蓋並統一 18.5px 設定 */
+#article-container .large-font-page,
+#post-content .large-font-page,
 .large-font-page {
-  font-size: 1.1875rem !important;
+  font-size: 1.15625rem !important;
 }
 
-/* 確保裡面的所有段落、列表、自定義 div 都繼承這個大小 */
+/* 針對段落、列表與自定義描述區塊進行同步縮放 */
 .large-font-page p, 
 .large-font-page div, 
 .large-font-page li, 
 .large-font-page .about-desc, 
 .large-font-page .bot-description p {
-  font-size: 1.1875rem !important;
-  line-height: 1.8 !important;
+  font-size: 1.15625rem !important;
+  line-height: 1.78 !important; /* 隨字體變大，稍微增加行高維持呼吸感 */
 }
 
-/* 標題保持相對比例放大 */
+/* 標題比例隨本文同步縮放 */
 .large-font-page h2 {
-  font-size: 1.8em !important;
+  font-size: 1.65em !important; 
 }
 
 .large-font-page h3 {
-  font-size: 1.5em !important;
+  font-size: 1.45em !important;
 }
-/* 讓 large-font-page 裡面的所有 code 標籤自動繼承父層的大小 */
+
+/* Code 標籤設定：保持與本文大小一致，不縮小 */
 .large-font-page code {
-  /* 使用 inherit 讓它直接抓所在地（可能是 h3，也可能是 p）的大小 */
   font-size: inherit !important; 
-  
-  /* 稍微調整一下垂直對齊，讓英文字母跟中文字看起來在同一條線上 */
-  vertical-align: middle;
-  
-  /* 保持原本的質感 */
+  vertical-align: baseline;
   background-color: rgba(175, 184, 193, 0.2);
-  padding: 0.1em 0.3em;
+  padding: 0.15em 0.35em;
   border-radius: 4px;
-  font-family: inherit; /* 也可以考慮繼承字體，讓整體感更統一 */
   font-weight: bold;
 }
