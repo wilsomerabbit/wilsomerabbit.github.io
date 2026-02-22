@@ -64,7 +64,7 @@ layout: page
         </div>
       </div>
     </div>
-    <a href="https://discord.com/oauth2/authorize?client_id=1468680591145828362" class="discord-invite-join" target="_blank">Join</a>
+    <a href="https://discord.com/oauth2/authorize?client_id=1468680591145828362&permissions=10240&integration_type=0&scope=bot" class="discord-invite-join" target="_blank">Join</a>
   </div>
   
   <div class="bot-description">
