@@ -963,3 +963,86 @@ figure.highlight {
   border-radius: 4px;
   font-weight: bold;
 }
+/* ====================================== */
+/* 手機版版面寬度優化 (針對 768px 以下)     */
+/* ====================================== */
+@media screen and (max-width: 768px) {
+  /* 1. 縮減主要容器的左右內距，讓出空間給圖片 */
+  #article-container {
+    padding: 20px 12px !important; /* 原本可能是 30px 24px，縮減後空間變多 */
+  }
+
+  /* 2. 讓圖片與卡片在窄螢幕下能夠填滿寬度，避免縮太小 */
+  .bot-layout, .about-content, .chess-info {
+    gap: 16px !important; /* 縮小物件間的間距 */
+  }
+
+  /* 3. 強制讓 Discord 邀請卡片寬度自適應 */
+  .discord-invite-card {
+    width: 100% !important;
+    min-width: unset !important;
+    max-width: 100% !important;
+  }
+
+  /* 4. 優化關於我區塊的圖片顯示 */
+  .about-right {
+    width: 100% !important;
+    margin-top: 10px;
+  }
+
+  .about-side-img {
+    max-height: 250px; /* 避免在手機上圖片垂直拉得太長 */
+    object-fit: cover;
+  }
+
+  /* 5. 修正內文圖片可能卡到邊的問題 */
+  #post-content img {
+    margin: 0 -12px !important; /* 負毛利法：讓圖片稍微超出文字邊界，達到全寬感 */
+    width: calc(100% + 24px) !important;
+    max-width: none !important;
+    border-radius: 0; /* 在全寬模式下取消圓角通常看起來更專業 */
+  }
+}
+/* ====================================== */
+/* 手機版字體與排版優化 (< 768px)          */
+/* ====================================== */
+@media screen and (max-width: 768px) {
+  
+  /* 1. 將手機版基礎字體調降至 1.05rem (約 16.8px) */
+  #article-container .large-font-page,
+  #post-content .large-font-page,
+  .large-font-page {
+    font-size: 1.05rem !important;
+  }
+
+  /* 2. 針對段落、列表同步縮放，並微調行高 */
+  .large-font-page p, 
+  .large-font-page div, 
+  .large-font-page li, 
+  .large-font-page .about-desc, 
+  .large-font-page .bot-description p {
+    font-size: 1.05rem !important;
+    line-height: 1.65 !important; /* 手機版行高稍縮，增加閱讀連續性 */
+  }
+
+  /* 3. 標題也要跟著縮小，才不會顯得突兀 */
+  .large-font-page h2 {
+    font-size: 1.35rem !important; /* 從 1.65em 降下來 */
+    margin: 25px 0 15px !important;
+  }
+
+  .large-font-page h3 {
+    font-size: 1.2rem !important;
+  }
+
+  /* 4. 解決你提到的 Margin/Padding 太寬問題 */
+  #article-container {
+    padding: 16px 14px !important; /* 縮減容器內距，讓出空間給文字與圖片 */
+  }
+
+  /* 5. 確保 Code 指令在手機上不會因為字太小看不清楚 */
+  .large-font-page code {
+    font-size: 0.95rem !important; 
+    padding: 0.1em 0.3em !important;
+  }
+}
