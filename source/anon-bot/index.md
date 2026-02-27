@@ -13,6 +13,13 @@ layout: page
 
 ![anon-bot-image](/img/anon-bot-image.png)
 
+#### 📋 更新日誌
+* **2026/02/28**：
+    * 新增 **Ave Mujica** 第 1~13 集圖片收錄。
+    * `/mygo` 指令改為 `/mygo_mujica` 或 `/go`，支援搜尋 Mujica 的圖片了！ 
+    * 支援「個人應用程式安裝」，現在不需要把愛音加入伺服器也能使用愛音。
+    * 優化 `/search`，下拉選單可以翻頁了。
+
 ---
 
 ## 🛠️ 指令介紹
@@ -27,10 +34,10 @@ layout: page
 
 ---
 
-### 2. `/mygo` — 快速精準搜尋
+### 2. `/mygo_mujica`, `/go` — 快速精準搜尋
 如果你已經對台詞瞭若指掌，這是最快的出圖方式。
-
-* **用法**：輸入`/mygo [台詞]`
+>兩個指令功能都是一樣的！
+* **用法**：輸入`/mygo_mujica [台詞]` 或 `/go [台詞]`
 
 * **特色**：直接從資料庫搜尋對應圖片。台詞後方的角色代表說台詞的人，或在圖片裡的主角，幫助在台詞重複時精確分辨。
 
@@ -43,7 +50,7 @@ layout: page
 * **用法**：輸入 `/search [角色]` 。
 * **特色**：送出指令後，Discord 會跳出該角色的專屬的**下拉選單**，列出所有收錄的台詞。
 
-![/search 選單截圖](/img/search-sample1.png)
+![/search 選單截圖](/img/search-sample2.png)
 
 ---
 
@@ -68,14 +75,27 @@ layout: page
   </div>
   
   <div class="bot-description">
-    <p>點擊左側卡片的 <strong>Join</strong> 按鈕，即可將愛音邀請至你的伺服器！</p>
+    <p>點擊左側卡片的 <strong>Join</strong> 按鈕，即可將愛音新增至應用程式或邀請到你的伺服器！</p>
     <p>邀請後可以使用 <code>/</code> 查看詳細指令列表。</p>
   </div>
 </div>
 
+
 ---
-> 💡 如果發現想用的梗圖沒被收錄，歡迎私訊千早愛音機器人或連繫我！
+
+### 🎉彩蛋
+ 試試看:D <span style="background-color: rgba(88, 101, 242, 0.15); color: #5865F2; padding: 0 4px; border-radius: 3px; font-weight: 650; cursor: pointer;">@千早愛音</span> 演奏春日影
+![演奏春日影](/img/為什麼要演奏春日影.jpg)
+
+---
 </div>
+
+>💡 如果發現想用的梗圖沒被收錄，歡迎私訊千早愛音機器人或連繫我！
+
+
+**📅 最後更新時間：2026/02/28**
+
+
 
 <hr class="section-divider" />
 
