@@ -14,6 +14,8 @@ layout: page
 ![anon-bot-image](/img/anon-bot-image.png)
 
 #### 📋 更新日誌
+* **2026/03/03**：
+    * 「個人應用程式」的愛音可以在私訊使用了！
 * **2026/02/28**：
     * 新增 **Ave Mujica** 第 1~13 集圖片收錄。
     * `/mygo` 指令改為 `/mygo_mujica` 或 `/go`，支援搜尋 Mujica 的圖片了！ 
