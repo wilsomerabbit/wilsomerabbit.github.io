@@ -108,7 +108,7 @@ fetch('https://api.chess.com/pub/player/wilsome/stats')
     <h2 class="section-title"><i class="fas fa-mug-hot" style="color:#ef4444"></i> 請我喝杯拿鐵↗</h2>
   </a>
   <p class="sponsor-desc">如果你喜歡我的內容或專案，可以請我喝杯拿鐵來支持我繼續創作！</p>
-  <a href="#" class="sponsor-banner-link" target="_blank">
+  <a href="https://portaly.cc/aurora411/support" class="sponsor-banner-link" target="_blank">
     <img src="/img/sponsor-banner.jpg" class="sponsor-banner-img" alt="贊助" />
   </a>
   <p class="sponsor-hint">點圖片可以進入贊助連結</p>
