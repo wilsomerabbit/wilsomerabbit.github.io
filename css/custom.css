@@ -278,6 +278,57 @@ body {
   color: #f1f5f9;
 }
 
+/* ====================================== */
+/* 側邊欄與內文等高設定 (Equal height sidebar) */
+/* ====================================== */
+
+/* 1. 讓主內容區域自動延伸 (Allow main content to stretch) */
+.layout > div:first-child {
+  align-self: stretch !important;
+}
+
+/* 2. 統一側邊欄背景，使其看起來是等高的長條 (Unify sidebar background) */
+#aside-content {
+  background: #111d35 !important;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 14px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+  padding: 0 !important;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 3. 移除個別卡片的背景與間距 (Remove individual card styles) */
+#aside-content .card-widget {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+  margin-bottom: 0 !important;
+  border-radius: 0 !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06) !important;
+}
+
+/* 修復最後一個卡片的邊框 (Fix last card border) */
+#aside-content .card-widget:last-child {
+  border-bottom: none !important;
+}
+
+#aside-content .sticky_layout .card-widget:last-child {
+  border-bottom: none !important;
+}
+
+/* 修復圓角溢出問題 (Fix border radius overflow) */
+#aside-content > .card-widget:first-child {
+  border-top-left-radius: 14px !important;
+  border-top-right-radius: 14px !important;
+}
+
+#aside-content .sticky_layout:last-child .card-widget:last-child {
+  border-bottom-left-radius: 14px !important;
+  border-bottom-right-radius: 14px !important;
+}
+
+
 .type-index p {
   color: #cbd5e1;
   line-height: 1.8;
